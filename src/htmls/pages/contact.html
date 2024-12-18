@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Idiot</title>
+    <link rel="icon" href="../../docs/home.png">
+    <link rel="stylesheet" href="../../css/jeshlat.css">
+    <link rel="stylesheet" href="../../css/pages.css">
+
+</head>
+<body>
+
+    <nav>
+        <div class="left">
+            <a href="../../../index.html"><img src="../../docs/home.png" alt="Home"></a>
+            <ul>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="../../docs/home.png" alt="User Profile Picture">
+        </div>
+    </nav>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        .contact-page {
+            padding: 20px;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .contact-section h1 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .fake-submit {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .fake-submit img {
+            width: 500px;
+            max-width: fit-content;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .fake-submit img:hover {
+            transform: scale(1.1);
+        }
+
+        .fake-submit p {
+            font-size: 1rem;
+            color: #1a1a1a;
+            margin-top: 10px;
+        }
+
+        .fake-submit img:hover + p::after {
+            content: " You thought this was real? Cute.";
+            color: #f0f0f0;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main class="contact-page">
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>
+                Got a suggestion? Want to confess your undying love for us? Need to contact your favorite celebrities but don't know how?  
+                We know you believe in us, and we *pretend* to care about your opinion. So, what are you waiting for? <strong>CONTACT US NOW!</strong>
+            </p>
+            <div class="fake-submit">
+                <img src="../../docs/fake-submit.png" alt="Submit Button" class="submit-button">
+                <p class="hover-text">This button does absolutely nothing btw. Good luck out there!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="position: relative;">
+        <p>&copy; 2024 Hamizza Awards. All rights not reserved hhhh.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Social Media</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

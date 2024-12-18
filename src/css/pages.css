@@ -1,0 +1,94 @@
+main {
+    padding: 20px;
+    margin-top: 120px; 
+}
+
+.about-section {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h1 {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.about-section h2 {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #d0d0d0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+main {
+    flex: 1; 
+}
+@media (max-width: 768px) {
+    
+    main {
+        padding: 10px;
+        margin-top: 150px; 
+    }
+/*41 hh*/ 
+}
+
+@media (min-width: 1024px) {
+    main {
+        margin-top: 100px; /* Increased spacing for larger screens */
+    }
+    footer {
+        position: fixed;
+        padding-right: 40px;
+    }
+}
+
+.vote-link {
+    text-decoration: none;
+}
+
+.vote-square {
+    width: 200px;
+    height: 200px;
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+.vote-square:hover {
+    background-color: #4a4a6a;
+    border-color: #4a4a6a;
+}
+
+.vote-square span {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.vote-square:hover span {
+    opacity: 0; 
+    
+}
+
+.vote-square:hover::after {
+    content: "Send your foot from here"; 
+    position: absolute;
+    color: #ffffff; 
+    font-size: 1.2rem;
+}
