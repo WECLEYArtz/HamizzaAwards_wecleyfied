@@ -10,13 +10,12 @@ a {
   color: inherit;
 }
 
-
 .categories-container {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; 
+  gap: 20px;
   padding: 20px;
 }
 
@@ -24,14 +23,14 @@ a {
 .category-card {
   background-color: #2a1f3c;
   border-radius: 10px;
-  text-align: center; 
+  text-align: center;
   width: 220px;
   padding: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column; /* هاد القلوة من البارح كانقلب عليها */
-  align-items: center; 
-} 
+  align-items: center;
+}
 
 /* حقدت يا زبي */
 .category-card img {
@@ -44,7 +43,8 @@ a {
 /* الله يحرق طبونمكم */
 .category-card p {
   margin-top: 10px;
-  font-size: 1rem;text-align: center;
+  font-size: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -53,12 +53,12 @@ a {
   }
 
   .category-card {
-    width: 150px; 
+    width: 150px;
     padding: 10px;
   }
 
   .category-card img {
-    height: auto; 
+    height: auto;
   }
 }
 

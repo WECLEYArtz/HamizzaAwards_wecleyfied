@@ -1,210 +1,206 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-    margin: 0;
-    padding-top: 100px !important; 
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  margin: 0;
+  padding-top: 100px !important;
 }
 
-h1, h2 {
-    color: #ffd700;
-    margin: 0;
-    text-align: center;
+h1,
+h2 {
+  color: #ffd700;
+  margin: 0;
+  text-align: center;
 }
 
 h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(26, 26, 26, 0.9);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(26, 26, 26, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 nav .left {
-    display: flex;
-    align-items: center; 
-    gap: 20px; 
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 /*41 hh*/
 nav ul li {
-    margin: 0 20px;
-    list-style: none;
-    display: flex;
-    padding: 0;
+  margin: 0 20px;
+  list-style: none;
+  display: flex;
+  padding: 0;
 }
 
 nav ul li a {
-    color: #f0f0f0;
-    text-decoration: none;
+  color: #f0f0f0;
+  text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-nav .left img{
-    height: 40px;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+nav .left img {
+  height: 40px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 nav .right img {
-    height: 40px;
-    padding-right: 60px;
+  height: 40px;
+  padding-right: 60px;
 }
-
 
 /* container d zb wllah 7ta 7a9adni*/
 .categories-container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 50px 100px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 100px;
 }
 
 .categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .category-card {
-    background-color: #2a2a2a;
-    border: 2px solid #4a4a6a;
-    border-radius: 8px;
-    width: calc(25% - 20px);
-    padding-top: 25%;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s, border-color 0.3s;
+  background-color: #2a2a2a;
+  border: 2px solid #4a4a6a;
+  border-radius: 8px;
+  width: calc(25% - 20px);
+  padding-top: 25%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .category-card h3 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.2em;
-    text-align: center;
-    padding: 0 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0 10px;
 }
 
 .category-card:hover {
-    background-color: #4a4a6a;
-    border-color: #4a4a6a;
+  background-color: #4a4a6a;
+  border-color: #4a4a6a;
 }
 
 @media (max-width: 1024px) {
-    .category-card {
-        width: calc(33.333% - 20px);
-        padding-top: 33.333%;
-    }
+  .category-card {
+    width: calc(33.333% - 20px);
+    padding-top: 33.333%;
+  }
 }
 
 @media (max-width: 768px) {
-    .category-card {
-        width: calc(50% - 20px);
-        padding-top: 50%;
-    }
-    nav ul {
-        padding: 10px;
-        align-items: flex-start;
-    }
+  .category-card {
+    width: calc(50% - 20px);
+    padding-top: 50%;
+  }
+  nav ul {
+    padding: 10px;
+    align-items: flex-start;
+  }
 
-    nav ul li {
-        margin: 5px 0;
-        padding: 10px;
-    }
-    main {
-        padding: 10px;
-        padding-top: 150px;
-    }
-/*41 hh*/
+  nav ul li {
+    margin: 5px 0;
+    padding: 10px;
+  }
+  main {
+    padding: 10px;
+    padding-top: 150px;
+  }
+  /*41 hh*/
 
-    footer ul li {
-        padding: 10px;
-    }
+  footer ul li {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 480px) {
-    .category-card {
-        width: 100%;
-        padding-top: 100%;
-    }
+  .category-card {
+    width: 100%;
+    padding-top: 100%;
+  }
 }
 
 footer {
-    background-color: #333;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border-top: 2px solid #ffd700;
-    padding: 20px;
-    color: #d0d0d0;
-    font-size: 0.9rem;
+  background-color: #333;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #ffd700;
+  padding: 20px;
+  color: #d0d0d0;
+  font-size: 0.9rem;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 footer ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
-
 footer a {
-    color: #ffd700;
-    text-decoration: none;
+  color: #ffd700;
+  text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    width: 100%; /* Fit the screen width */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Fit the screen width */
 }
 * {
-    box-sizing: border-box; /* Ensure padding and borders are included in the element's width/height */
+  box-sizing: border-box; /* Ensure padding and borders are included in the element's width/height */
 }
-nav, main {
-    width: 100%; /* Ensure these elements don't exceed screen width */
-}
-@media (min-width: 1024px) {
-    main {
-        padding-top: px; 
-    }
+nav,
+main {
+  width: 100%; /* Ensure these elements don't exceed screen width */
 }
