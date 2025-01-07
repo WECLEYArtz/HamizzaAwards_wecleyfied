@@ -28,21 +28,22 @@ nav {
   padding: 10px 20px;
   z-index: 1000;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
+
 nav .left {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-/*41 hh*/
+
 nav ul li {
   margin: 0 20px;
-  list-style: none;
   display: flex;
   padding: 0;
 }
@@ -62,12 +63,12 @@ nav .left img {
   width: 60px;
   height: 60px;
 }
+
 nav .right img {
   height: 40px;
   padding-right: 60px;
 }
 
-/* container d zb wllah 7ta 7a9adni*/
 .categories-container {
   max-width: 100%;
   margin: 0 auto;
@@ -113,18 +114,13 @@ nav .right img {
   border-color: #4a4a6a;
 }
 
-@media (max-width: 1024px) {
-  .category-card {
-    width: calc(33.333% - 20px);
-    padding-top: 33.333%;
-  }
-}
 
 @media (max-width: 768px) {
   .category-card {
     width: calc(50% - 20px);
     padding-top: 50%;
   }
+
   nav ul {
     padding: 10px;
     align-items: flex-start;
@@ -134,11 +130,10 @@ nav .right img {
     margin: 5px 0;
     padding: 10px;
   }
+
   main {
     padding: 10px;
-    padding-top: 150px;
   }
-  /*41 hh*/
 
   footer ul li {
     padding: 10px;
@@ -160,7 +155,6 @@ footer {
   bottom: 0;
   width: 100%;
   border-top: 2px solid #ffd700;
-  padding: 20px;
   color: #d0d0d0;
   font-size: 0.9rem;
 }
@@ -194,13 +188,83 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  width: 100%; /* Fit the screen width */
+  overflow-x: hidden;
+  width: 100%;
 }
+
 * {
-  box-sizing: border-box; /* Ensure padding and borders are included in the element's width/height */
+  box-sizing: border-box;
 }
+
 nav,
 main {
-  width: 100%; /* Ensure these elements don't exceed screen width */
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 50%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.carousel-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-dot.active {
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+  .carousel-item {
+    min-width: 100%; /* Show only one image per slide */
+  }
+
+  .carousel-dot {
+    margin: 0 3px; /* Adjust the spacing between dots */
+  }
+}
+
+/* Adjust for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .carousel-item {
+    min-width: 100%; /* Still only one image */
+  }
+
+  .carousel-dot {
+    margin: 0 2px; /* Further adjust dot spacing */
+  }
 }
