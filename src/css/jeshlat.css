@@ -2,7 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #1a1a1a;
   color: #f0f0f0;
-  margin: 0;
   padding-top: 100px !important;
 }
 
@@ -71,7 +70,7 @@ nav .right img {
 
 .categories-container {
   max-width: 100%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding: 50px 100px;
 }
 
@@ -138,12 +137,25 @@ nav .right img {
   footer ul li {
     padding: 10px;
   }
+
+  .carousel-dot {
+    margin: 0 3px; 
+  }
 }
 
 @media (max-width: 480px) {
-  .category-card {
-    width: 100%;
-    padding-top: 100%;
+  
+  .categories-container{
+    padding: 10px;
+  }
+  nav{
+    padding: 15px;
+  }
+  nav .left{
+    gap: 0;
+  }
+  nav .right img{
+    padding-right: 10px;
   }
 }
 
@@ -185,9 +197,9 @@ footer a:hover {
 }
 
 html,
-body {
+body {/*
   margin: 0;
-  padding: 0;
+  padding: 0;*/
   overflow-x: hidden;
   width: 100%;
 }
@@ -216,8 +228,15 @@ main {
 
 .carousel-item {
   min-width: 50%;
+  min-width: 50%;
   box-sizing: border-box;
-  padding: 0 10px;
+  overflow: hidden; 
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out; 
+  padding: 20px;
+  
 }
 
 .carousel-item img {
@@ -247,24 +266,39 @@ main {
   transform: scale(1.2);
 }
 
-/* Responsive styling for mobile */
 @media (max-width: 768px) {
+  .carousel-container {
+    overflow: hidden;
+  }
+
   .carousel-item {
-    min-width: 100%; /* Show only one image per slide */
+    min-width: 100%; 
   }
 
   .carousel-dot {
-    margin: 0 3px; /* Adjust the spacing between dots */
+    margin: 0 3px; 
   }
 }
 
-/* Adjust for very small screens (max-width: 480px) */
 @media (max-width: 480px) {
+  .carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
   .carousel-item {
-    min-width: 100%; /* Still only one image */
+    display: inline-block;
+    width: 100%;
+    min-width: 100% !important;
+    box-sizing: border-box;
   }
 
   .carousel-dot {
-    margin: 0 2px; /* Further adjust dot spacing */
+    margin: 0 2px; 
   }
+}
+
+
+.carousel-item:hover {
+  transform: scale(1.05); 
 }
