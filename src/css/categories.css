@@ -38,7 +38,7 @@ a {
   height: 200px;
   object-fit: contain;
   border-radius: 30px;
-
+  flex-shrink: 0;
 }
 
 /* الله يحرق طبونمكم */
@@ -46,6 +46,7 @@ a {
   margin-top: 10px;
   font-size: 1rem;
   text-align: center;
+  flex-grow: 1;
 }
 
 @media (max-width: 768px) {
