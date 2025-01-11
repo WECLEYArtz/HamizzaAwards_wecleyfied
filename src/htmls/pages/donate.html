@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Hamizza Awards</title>
+    <link rel="stylesheet" href="../../css/jeshlat.css">
+    <style>
+        .categories-container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .categories-container h1,
+        .categories-container h2 {
+            text-align: center;
+            color: #ffd700;
+        }
+
+        .payment-section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .payment-section:hover {
+            transform: scale(1.02);
+            background-color: #252525;
+        }
+
+        .payment-section h2 {
+            color: #ffd700;
+        }
+
+        .payment-section p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .payment-section p.reward {
+            color: #8aff8a;
+            font-weight: bold;
+        }
+
+        .payment-section label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .payment-section input,
+        .payment-section select,
+        .payment-section button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .payment-section input,
+        .payment-section select {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            border: 1px solid #ffd700;
+        }
+
+        .payment-section button {
+            background-color: #ffd700;
+            color: #1a1a1a;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .payment-section button:hover {
+            background-color: #e0c200;
+            transform: translateY(-2px);
+        }
+
+    </style>
+    <script>
+        window.onbeforeunload = function () {
+        window.location.href = "jew.html";
+        return null;
+        };
+
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="../../../index.html"><img src="../../docs/home.png" alt="Home"></a>
+            <ul>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="../../docs/home.png" alt="User Profile Picture">
+        </div>
+    </nav>
+
+    <main>
+        <div class="categories-container">
+            <h1>Donate</h1>
+            <div class="payment-section">
+                <h2>Kidney Donation</h2>
+                <p>We take your kidney, you get satisfied <span style="color: #4f4f4f;">(sharing is caring)</span>. A win-win deal.</p>
+                <p class="reward">Reward: 20.5 Pizzoin</p>
+                <button>Donate Kidney</button>
+            </div>
+
+            <div class="payment-section">
+                <h2>Soul Donation</h2>
+                <p>Your eternal soul for a small price of 10 Pizzoin. Totally fair (no refunds).</p>
+                <p class="reward">Reward: 10 Pizzoin</p>
+                <button>Donate Soul</button>
+            </div>
+
+            <div class="payment-section">
+                <h2>Firstborn Child</h2>
+                <p>Pledge your firstborn child.</p>
+                <p class="reward">Reward: 4 Pizzoin</p>
+                <select>
+                    <option>Will deliver in 9 months</option>
+                    <option>Already have one, where do I ship?</option>
+                    <option>I'm keeping my child, sorry (Greedy 😠 -40 Pizzoin)</option>
+                </select>
+                <button>Pledge Child</button>
+            </div>
+
+            <div class="payment-section">
+                <h2>Sell Your Free Time</h2>
+                <p>Hand over your precious time. You weren’t doing anything important anyway.</p>
+                <p class="reward">Reward: 1 Pizzoin per hour</p>
+                <form>
+                    <label for="free-time">How many hours will you sacrifice?</label>
+                    <input type="number" id="free-time" min="1" max="24" placeholder="Enter hours" required>
+                    <button type="submit">Donate Free Time</button>
+                </form>
+            </div>
+
+            <div class="payment-section">
+                <h2>Donate by Making Du'aa</h2>
+                
+                <p>Pray for us! (We need it, fr 🙏🙏).</p>
+                <table>
+                    <tr>
+                        <td><p class="reward">Reward:</p></td><td><p class="reward">1 Pizzoin for every 10 du'aa.</p></td>
+                    </tr>
+                    <tr><td></td><td><p class="reward">41 Pizzoin for "اللهم وفق صناع هذا الموقع في حياتهم".</p></td></tr>
+                </table>
+                <form>
+                    <label for="duaa-count">How many times will you make du'aa?</label>
+                    <input type="number" id="duaa-count" min="1" placeholder="Enter number of du'aa" required>
+                    <label for="duaa-choice">Choose your du'aa:</label>
+                    <select id="duaa-choice" required>
+                        <option value="" disabled selected>Select a du'aa</option>
+                        <option>أستغفر الله</option>
+                        <option>الحمد لله</option>
+                        <option>سبحان الله وبحمده سبحان الله العظيم</option>
+                        <option>اللهم وفق صناع هذا الموقع في حياتهم</option>
+                    </select>
+                    <button type="submit">Submit Du'aa</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer style="position: relative;">
+        <p>&copy; 2041 Hamizza Inc. All rights stolen.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Social Media</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

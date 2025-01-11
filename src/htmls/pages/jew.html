@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPC Encounter</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffd700;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .npc-container {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            max-width: 600px;
+        }
+
+        .npc-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .npc-dialogue {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #ffd700;
+            color: #1a1a1a;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e0c200;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffd700;
+        }
+
+        a:hover {
+            color: #e0c200;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-section npc-dialog">
+        <h2>NPC Encounter</h2>
+        <p>Hamizza Inc. gazes at you, unblinking, with the aura of a final boss. What’s your move?</p>
+        <form>
+            <label for="npc-choice">Choose your response:</label>
+            <select id="npc-choice" required>
+                <option value="" disabled selected>Select your fate...</option>
+                <option>[Lie] "Kidneys? Never had 'em. Check someone else."</option>
+                <option>[Beg] "Pls no. I'm just a humble peasant."</option>
+                <option>[Run] "N I G E R U N D A Y O!!!!!"</option>
+                <option>[Outsmart] "Why does Hamizza need my soul anyway? Delete Genshin and get your life first before getting others."</option>
+                <option>[Flex] "Hey there 🙋‍♂️ I have a gun."</option>
+
+            </select>
+            <button type="submit">Submit Response</button>
+        </form>
+    </div>
+    
+</body>
+</html>
