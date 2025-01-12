@@ -1,0 +1,54 @@
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+}
+
+.carousel-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-dot.active {
+  background-color: #333;
+  transform: scale(1.2);
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}

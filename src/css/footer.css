@@ -1,0 +1,36 @@
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #ffd700;
+  color: #d0d0d0;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
