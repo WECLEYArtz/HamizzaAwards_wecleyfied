@@ -193,13 +193,13 @@ body {
 }
 
 #page-select {
-    background-color: #1a1a1a;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #2d2c2c;
     color: #fff;
     border: 1px solid #6200ea;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
 }
 .bottom-disabled {
     background-color: #555; 
@@ -225,3 +225,45 @@ header > h1 {
     margin: 20px 0;    
     letter-spacing: 1px; 
 }
+/* Styling for iframe to match manga-page layout */
+iframe.manga-page {
+    width: 100%; /* Ensure it stretches across the container */
+    height: 80vh; /* Adjust height for a good viewing experience */
+    border: none; /* Remove iframe border */
+    display: none; /* Initially hidden, shown via JS */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a better visual */
+    border-radius: 8px; /* Optional: Rounded corners for modern design */
+    margin: 10px auto;
+    background-color: #fff; /* Optional: Background fallback for iframe content */
+}
+
+/* Show the active iframe */
+iframe.manga-page.active {
+    display: block; /* Ensure the active iframe is visible */
+}
+
+.prev-btn, .next-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Disabled button */
+.prev-btn:disabled, .next-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+

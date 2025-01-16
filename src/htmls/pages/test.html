@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story - بيتزا and حميد</title>
+    <style>
+        /* Theme Colors */
+        :root {
+            --primary-color: #2C3E50; /* Replace with your site theme's primary color */
+            --secondary-color: #E74C3C; /* Replace with your site theme's secondary color */
+            --background-color: #ECF0F1; /* Replace with your site background color */
+            --text-color: #2C3E50; /* Replace with your site text color */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .choice {
+            margin: 20px 0;
+        }
+
+        .choice button {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .choice button:hover {
+            background-color: #C0392B;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: var(--primary-color);
+            color: white;
+            position: relative;
+        }
+
+        .map {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .achievement {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive Story: بيتزا and حميد's Adventure</h1>
+    </header>
+
+    <div class="container">
+        <div id="story">
+            <p>You and حميد stand at the base of جبل عبد الحميد حمدي علوان. The winds howl, and the peak seems unreachable. Do you:</p>
+        </div>
+
+        <div class="choice">
+            <button onclick="choosePath('confront')">Confront قرعة</button>
+            <button onclick="choosePath('observe')">Observe from a distance</button>
+        </div>
+
+        <div id="map" class="map">
+            <h3>Map of Progress</h3>
+            <img src="map-placeholder.jpg" alt="Map of جبل عبد الحميد حمدي علوان" style="max-width:100%;">
+        </div>
+
+        <div id="achievements" class="achievement">
+            <h3>Achievements</h3>
+            <p>No achievements yet. Make choices to unlock them!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Site Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const story = document.getElementById('story');
+        const achievements = document.getElementById('achievements');
+
+        function choosePath(choice) {
+            if (choice === 'confront') {
+                story.innerHTML = `<p>You approach قرعة cautiously. She looks at you and whispers, "The summit is not what it seems." You now must decide whether to press her for answers or climb the mountain yourself. Do you:</p>`;
+                updateChoices('press', 'climb');
+            } else if (choice === 'observe') {
+                story.innerHTML = `<p>You decide to observe قرعة from a distance. She remains seated, enigmatic. Suddenly, she vanishes into thin air. You now must decide whether to follow her trail or camp for the night. Do you:</p>`;
+                updateChoices('follow', 'camp');
+            }
+        }
+
+        function updateChoices(choice1, choice2) {
+            const choiceContainer = document.querySelector('.choice');
+            choiceContainer.innerHTML = `
+                <button onclick="choosePath('${choice1}')">${capitalize(choice1)}</button>
+                <button onclick="choosePath('${choice2}')">${capitalize(choice2)}</button>
+            `;
+        }
+
+        function capitalize(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+    </script>
+</body>
+</html>
