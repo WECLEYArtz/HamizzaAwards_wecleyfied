@@ -8,26 +8,18 @@
     <link rel="stylesheet" href="../../css/jeshlat.css">
     <link rel="stylesheet" href="../../css/pages.css">
 
+	<script src="../../js/loader.js"></script>
 </head>
 <body>
 
-    <nav>
-        <div class="left">
-            <a href="../../../index.html"><img src="../../docs/home.png" alt="Home"></a>
-            <ul>
-                <li><a href="news.html">News</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </div>
-        <div class="right">
-            <img src="../../docs/home.png" alt="User Profile Picture">
-        </div>
-    </nav>
+	<div id="navbar-container"></div>
+	<script>loadHTML('navbar-container','../layers/navbar.html')</script>
+
     <h1>Welcome to the Frequently Asked Questions!</h1>
-    <p>Don't hesitate—express your thoughts. We're here to listen because <span style="color: #db6607;">your voice matters</span>.</p>
+    <p>Don't hesitate—express your thoughts. We're here to listen because
+	<span style="color: #db6607;">your voice matters</span>.</p>
     <section style="display: flex; justify-content: center; align-items: center; height: 80vh;">
-        <span style="font-size: 50vh;">😂</span>
+    <span style="font-size: 50vh;">😂</span>
     </section>
     <style>
         h1{
@@ -42,13 +34,8 @@
         
     </style>
 
-    <footer style="position: relative;">
-        <p>&copy; 2041 Hamizza Inc. All rights stolen.</p>
-        <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Social Media</a></li>
-        </ul>
-    </footer>
+	<div id="footer-container"></div>
+	<script>loadHTML('footer-container','../layers/footer.html')</script>
+
 </body>
 </html>

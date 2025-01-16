@@ -1,14 +1,26 @@
 .carousel {
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: auto;
+  margin-bottom: 50px;
   overflow: hidden;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+.shadow-carousel {
+  display: flex;
+  position: absolute;
+  box-shadow: inset 0 0 50px 10px #00000085;
+  min-width: 100%;
+  min-height: 100%;
+  pointer-events: none;
+  border-radius: 30px;
+  top: 0;
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  scale: 0.9;
 }
 
 .carousel-item {
@@ -29,23 +41,23 @@
 }
 
 .carousel-nav {
+  pointer-events: none;
   text-align: center;
-  margin-top: 10px;
 }
 
 .carousel-dot {
+  pointer-events: all;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   margin: 0 5px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
+  background-color: #333;
+  border-radius: 20%;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .carousel-dot.active {
-  background-color: #333;
+  background-color: #ccc;
   transform: scale(1.2);
 }
 

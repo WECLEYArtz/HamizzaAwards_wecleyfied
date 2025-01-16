@@ -2,12 +2,15 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(26, 26, 26, 0.9);
+  background-color: rgb(26 26 26);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   z-index: 1000;
+
+  box-shadow: 0 0 10px 10px #00000042;
+  border-bottom: 5px solid rgb(75 70 41);
 }
 
 nav ul {

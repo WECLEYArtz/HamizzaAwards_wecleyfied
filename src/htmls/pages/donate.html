@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate | Hamizza Awards</title>
     <link rel="stylesheet" href="../../css/jeshlat.css">
+
+	<div id="navbar-container"></div>
+	<script>loadHTML('navbar-container','../layers/navbar.html')</script>
+
     <style>
         .categories-container {
             max-width: 800px;
@@ -92,6 +96,7 @@
         };
         //shit ain't working like I thought
     </script>
+	<script src="../../js/loader.js"></script>
 </head>
 <body>
     <nav>
@@ -175,13 +180,7 @@
         </div>
     </main>
 
-    <footer style="position: relative;">
-        <p>&copy; 2041 Hamizza Inc. All rights stolen.</p>
-        <ul>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">Social Media</a></li>
-        </ul>
-    </footer>
+	<div id="footer-container"></div>
+	<script>loadHTML('footer-container','../layers/footer.html')</script>
 </body>
 </html>
