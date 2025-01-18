@@ -10,22 +10,16 @@ body {
   margin: 0;
 }
 
-h1,
-h2 {
+h1 , h2{
   color: #ffd700;
   margin: 0;
   text-align: center;
-}
-
-h2 {
   font-size: 2em;
 }
 
-
 .categories-container {
   max-width: 100%;
-  /*margin: 0 auto;*/
-  padding: 50px 100px;
+  padding: auto 10%;
 }
 
 .categories {
@@ -39,8 +33,10 @@ h2 {
   background-color: #2a2a2a;
   border: 2px solid #4a4a6a;
   border-radius: 8px;
-  width: calc(25% - 20px);
-  padding-top: 25%;
+  width: calc(21% - 21px);
+  padding: 10%;
+  padding-top: 3%;
+  margin: 1%;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -57,9 +53,8 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: center;
-  padding: 0 10px;
 }
 
 .category-card:hover {
@@ -67,11 +62,21 @@ h2 {
   border-color: #4a4a6a;
 }
 
+@media (max-width: 1080px) {
+  .category-card {
+    width: 45%;
+    padding: 10%;
+  }
+}
 
 @media (max-width: 768px) {
   .category-card {
-    width: calc(50% - 20px);
-    padding-top: 50%;
+    width: calc(100% - 21px);
+    padding-top: 21%;
+  }
+
+  .category-card h3{
+    font-size: 1em;
   }
 
   nav ul {
@@ -95,38 +100,6 @@ h2 {
   .carousel-dot {
     margin: 0 3px; 
   }
-}
-
-@media (max-width: 480px) {
-  
-  .categories-container{
-    padding: 10px;
-  }
-  nav{
-    padding: 15px;
-  }
-  nav .left{
-    gap: 0;
-  }
-  nav .right img{
-    padding-right: 10px;
-  }
-}
-
-
-html,
-body {/*
-  margin: 0;
-  padding: 0;*/
-  overflow-x: hidden;
-  width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
   .carousel-container {
     overflow: hidden;
   }
@@ -141,6 +114,17 @@ body {/*
 }
 
 @media (max-width: 480px) {
+  
+  nav{
+    padding: 15px;
+  }
+  nav .left{
+    gap: 0;
+  }
+  nav .right img{
+    padding-right: 10px;
+  }
+
   .carousel-container {
     overflow: hidden;
     white-space: nowrap;
@@ -156,4 +140,17 @@ body {/*
   .carousel-dot {
     margin: 0 2px; 
   }
+}
+
+
+html,
+body {/*
+  margin: 0;
+  padding: 0;*/
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
