@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamizza Encounter</title>
+    <title>Dialogs</title>
     <style>
         body {
             margin: 0;
@@ -24,233 +24,85 @@
             max-width: 800px;
             margin: auto;
             text-align: center;
-        }
-
-        .avatar-popup {
             position: relative;
             display: flex;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;
-            margin-bottom: 20px;
-            transition: all 0.5s ease;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .avatar-popup-container {
+            position: relative;
+        }
+
+        
+        .avatar-container {
+
+            position: relative;
+            transition: transform 0.5s ease;
         }
 
         .avatar {
-            flex-shrink: 0;
             width: 150px;
             height: 150px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 4px solid #ffd700;
-            transition: all 0.5s ease;
         }
 
-        .avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .popup {
+            position: absolute;
+            top: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
         }
 
-        .popup-image {
-            flex-shrink: 0;
+        .popup img,
+        .popup video {
+            width: auto;
             height: 150px; 
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.5s ease;
         }
 
-        .popup-image img {
-            height: 100%;
-            object-fit: contain;
+        #dialog-container {
+            text-align: center;
+            width: 90%;
         }
 
-        .dialogue-box {
-            background: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .options {
+        #choices-container {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
 
-        .option {
-            padding: 10px 15px;
-            background: #ffd700;
-            border: none;
-            border-radius: 10px;
+        .choice-btn {
+            background-color: #ffd700;
+            color: #535151;
+            border: 2px solid #0056b3;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 1rem;
-            transition: transform 0.2s ease;
+            transition: background-color 0.3s ease;
         }
 
-        .option:hover {
-            transform: scale(1.05);
-            background: #e0c200;
-        }
-
-        @media (min-width: 769px) {
-            .avatar-popup {
-                flex-direction: row;
-            }
-
-            .avatar-popup.active .avatar {
-                transform: translateX(-calc(150px + 20px)); 
-                transition: transform 0.5s ease-out;
-            }
-
-            .avatar-popup.active .popup-image {
-                opacity: 1;
-                pointer-events: auto;
-                transform: translateX(calc(150px + 20px)); 
-            }
-        }
-
-        @media (max-width: 768px) {
-            .avatar-popup {
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 0;
-            }
-
-            .avatar-popup.active .avatar {
-                animation: avatarMoveUp 0.5s ease-out forwards;
-            }
-
-            .avatar-popup.active .popup-image {
-                opacity: 1;
-                pointer-events: auto;
-                transform: translateY(0); 
-            }
-
-            .dialogue-box {
-                margin-top: 10px;
-            }
-
-            @keyframes avatarMoveUp {
-                0% {
-                    transform: translateY(0);
-                }
-                100% {
-                    transform: translateY(-150px); /* Moves avatar up by its height */
-                }
-            }
+        .choice-btn:hover {
+            background-color: #0056b3;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="avatar-popup">
-            <div class="avatar" id="avatar-container">
-                <img id="npc-avatar" src="jew.png" alt="NPC Avatar">
+        <div class="avatar-popup-container">
+            <div class="avatar-container">
+                <img id="avatar" src="../../docs/reactions/jew.png" alt="Hamizza" class="avatar">
             </div>
-            <div class="popup-image" id="popup-image">
-                <img id="popup-img" src="" alt="Popup Image">
+            <div id="popup" class="popup">
+                <img id="popup-img" src="">
             </div>
         </div>
-
-        <div class="dialogue-box" id="dialogue-box">
-            Bro thought he can leave just like that😭🙏🙏.
-        </div>
-
-        <div class="options" id="options">
-            <button class="option" onclick="handleResponse('1')">Beg</button>
-            <button class="option" onclick="handleResponse('2')">Be Logical</button>
-            <button class="option" onclick="handleResponse('3')">Say Something Random</button>
-            <button class="option" onclick="handleResponse('4')">Be Smart</button>
+        <div id="dialog-container">
+            <p id="dialog-text">Bro thought he can leave just like that😭🙏🙏.</p>
+            <div id="choices-container"></div>
         </div>
     </div>
-
-    <script>
-        const dialogues = {
-            1: {
-                text: "Hamizza: 'Hmm, beg? Classic.'",
-                options: {
-                    "1-1": "I have a family!",
-                    "1-2": "Hamizza, please! mercy!!",
-                    "1-3": "Please don’t take my soul, it’s already broken from studying.",
-                    "1-4": "I don't have family!"
-                }
-            },
-            "1-1": {
-                text: "Hamizza: 'You do??'",
-                avatar: "holy fuck.png",
-                options: {
-                    "1-1-1": "They’re all I have!",
-                    "1-1-2": "Please, think of my children!"
-                }
-            },
-            "1-1-1": {
-                text: "Hamizza: '*they're'",
-                avatar: "nerd.png",
-                options: {}
-            },
-            "1-1-2": {
-                text: "Hamizza: 'Free labor for Hamizza Inc. Noted.'",
-                options: {}
-            },
-            "1-4": {
-                text: "Hamizza: 'So... no one will notice if you disappeared?'",
-                avatar: "jew.png",
-                options: {
-                    "1-4-1": "I'm alone!"
-                }
-            },
-            "1-4-1": {
-                text: "Hamizza: 'HHHHHHHHHH'",
-                options: {
-                    "1-4-1-1": "no one cares about me...."
-                }
-            },
-            "1-4-1-1": {
-                text: "Hamizza: 'HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH'",
-                options: {}
-            },
-            2: {
-                text: "Hamizza: 'Logic isn’t the best choice in illogical situations.'",
-                options: {
-                    "2-1": "'Hamizza, if you take my soul, who’ll visit your site?'",
-                    "2-2": "'Hey there 🙋‍♂️ I have a gun.'",
-                    "2-3": "I’ll just sacrifice my friend instead."
-                }
-            },
-            // Add the rest of your dialogue tree here...
-        };
-
-        function handleResponse(choice) {
-            const dialogueBox = document.getElementById('dialogue-box');
-            const optionsContainer = document.getElementById('options');
-            const avatar = document.getElementById('npc-avatar');
-            const popupImage = document.getElementById('popup-img');
-
-            const response = dialogues[choice];
-            if (response) {
-                // Update dialogue
-                dialogueBox.textContent = response.text || "";
-
-                // Update avatar if available
-                if (response.avatar) {
-                    avatar.src = response.avatar;
-                }
-
-                // Update options
-                optionsContainer.innerHTML = "";
-                for (const [key, optionText] of Object.entries(response.options || {})) {
-                    const button = document.createElement('button');
-                    button.className = 'option';
-                    button.textContent = optionText;
-                    button.onclick = () => handleResponse(key);
-                    optionsContainer.appendChild(button);
-                }
-            } else {
-                dialogueBox.textContent = "Hamizza: 'No response for this choice.'";
-            }
-        }
-    </script>
+    <script src="../../js/jew.js"></script>
 </body>
 </html>
