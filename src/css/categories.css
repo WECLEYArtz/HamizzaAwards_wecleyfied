@@ -39,10 +39,11 @@ a {
 }
 
 /* الله يحرق طبونمكم */
-.category-card p {
+p {
   font-size: 1rem;
   text-align: center;
   flex-grow: 1;
+  text-align: center;
 }
 
 .category-card:hover {
