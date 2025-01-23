@@ -5,27 +5,11 @@
 // </div>
 // data : image , alt , title.
 
-const headers_collection = [
-	{
-		title:"Series with the Most Uploaded Episodes in 2024",
-		paragraph:"Celebrating the shows that flooded our screens with so many episodes in 2024,we delivered zero episodes in this year, proving that less is more (and we really mean less).You're welcome.",
-	},
-	{
-		title:"Best Editing",
-		paragraph:"Honoring the editor who didn't even touch the undo button all year.",
-	},
-	{
-		title: "Best Actor, The One Who Made Us Forget We're Watching a Show",
-		paragraph: "Shouting out the actor who brought the role to life so well, we forgot we were watching a scripted show.",
-	},
-	{
-		title: "Best Actress",
-		paragraph: "she played the most attractive roles in 2024",
-	}
-]
 
 var cards_collection = [
-	category0 = [
+	[
+		title = "Series with the Most Uploaded Episodes in 2024",
+		paragraph = "Celebrating the shows that flooded our screens with so many episodes in 2024,we delivered zero episodes in this year, proving that less is more (and we really mean less).You're welcome.",
 		{
 			img: "../../docs/nominees/series/hamicible.png", 
 			alt: "Series 1",
@@ -52,7 +36,9 @@ var cards_collection = [
 			title: "Tom & Jerry (1940)",
 		},
 	],
-	category1 = [
+	[
+		title = "Best Editing",
+		paragraph= "Honoring the editor who didn't even touch the undo button all year.",
 		{
 			img: "../../docs/nominees/editing/editing (1).gif",
 			alt: "Series 3",
@@ -79,7 +65,9 @@ var cards_collection = [
 			title: "Whatsapp 💯",
 		},
 	],
-	category2 = [
+	[
+		title=  "Best Actor, The One Who Made Us Forget We're Watching a Show",
+		paragraph=  "Shouting out the actor who brought the role to life so well, we forgot we were watching a scripted show.",
 		{
 			img: "../../docs/nominees/actor/actor (1).png" ,
 			alt: "Series 1",
@@ -111,7 +99,9 @@ var cards_collection = [
 			title: "Hamizza",
 		},
 	],
-	category2 = [
+	[
+		title=  "Best Actress",
+		paragraph=  "she played the most attractive roles in 2024",
 		{   img: "../../docs/nominees/actress/actress (1).png" ,
 			alt: "Series 1",
 			title: "Jenna Ortega",
@@ -133,4 +123,34 @@ var cards_collection = [
 			title: "L7ima 🥵🥵",
 		},
 	],
+	[
+		title= "Best Customer Service, For When Your Show Literally Serves You",
+		paragraph= "Shoutout to the series that gave us top-tier customer service with every episode—quick, effective, and absolutely zero wait time. Our customer service is unbeatable because no one's ever had anything to complain about. The pictures bellow are made by our best editor Wicley, he didn't win the prize for nothing!",
+
+		{
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 1",
+			title: "Agent 1",
+		},
+		{
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 2",
+			title: "Agent 2",
+		},
+		{
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 3",
+			title: "Agent 3",
+		},
+		{ 
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 4",
+			title: "Agent 4",
+		},
+		{
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 5",
+			title: "Agent 5",
+		},
+	]
 ]

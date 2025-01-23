@@ -27,17 +27,17 @@ function surfeCategory(direction) {
 		console.log(current_category);
 	}
 
-	categories_title.innerText=		headers_collection[current_category].title;
-	categories_paragraph.innerText=	headers_collection[current_category].paragraph;
+	categories_title.innerText=		cards_collection[current_category][0];
+	categories_paragraph.innerText=	cards_collection[current_category][1];
 
-	generateCards(0);
+	generateCards();
 
 	localStorage.setItem("current_category", current_category);
 }
 
-function generateCards(i) {
+function generateCards() {
 	categories_container.innerHTML="";
-	for (; i < cards_collection[current_category].length; i++){
+	for (let i = 2 ; i < cards_collection[current_category].length; i++){
 		const card = document.createElement("div");
 		const card_img = document.createElement("img");
 		const card_title = document.createElement("span");
