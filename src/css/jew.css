@@ -1,0 +1,81 @@
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #1a1a1a, #333333);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .avatar-popup-container {
+            position: relative;
+        }
+
+        
+        .avatar-container {
+
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+        }
+
+        .popup {
+            position: absolute;
+            top: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+
+        .popup img,
+        .popup video {
+            width: auto;
+            height: 150px; 
+        }
+
+        #dialog-container {
+            text-align: center;
+            width: 90%;
+        }
+
+        #choices-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .choice-btn {
+            background-color: #ffd700;
+            color: #535151;
+            border: 2px solid #0056b3;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .choice-btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }

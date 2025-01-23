@@ -1,0 +1,54 @@
+
+@import url('carousel.css');
+@import url('general.css');
+
+.category-card {
+  background-color: #2a2a2a;
+  border: 2px solid #4a4a6a;
+  border-radius: 8px;
+  width: 1em;
+  padding: 10%;
+  padding-top: 3%;
+  margin: 1%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.category-card h3 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  text-align: center;
+}
+
+.category-card:hover {
+  background-color: #4a4a6a;
+  border-color: #4a4a6a;
+}
+
+@media (max-width: 1080px) {
+  .category-card {
+    width: 45%;
+    padding: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-card {
+    width: calc(100% - 21px);
+    padding-top: 21%;
+  }
+
+  .category-card h3{
+    font-size: 1em;
+  }
+}

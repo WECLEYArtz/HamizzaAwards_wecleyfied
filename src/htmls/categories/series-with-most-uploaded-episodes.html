@@ -7,12 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Series with the Most Uploaded Episodes in 2024</title>
-    <link rel="stylesheet" href="../../css/jeshlat.css">
+    <link rel="stylesheet" href="../../css/general.css">
     <link rel="stylesheet" href="../../css/categories.css">
     <link rel="icon" href="../../docs/home.png">
+
 </head>
 <body>
-
     <nav>
         <div class="left">
             <a href="../../../index.html"><img src="../../docs/home.png" alt="Home"></a>
@@ -26,33 +26,21 @@
             <img src="../../docs/home.png" alt="User Profile Picture">
         </div>
     </nav>
-        <main class="voting-section">
-            <h2>Series with the Most Uploaded Episodes in 2024</h2>
-            <p>Celebrating the shows that flooded our screens with so many episodes in 2024, we delivered zero episodes in this year, proving that less is more (and we really mean less). You're welcome.</p>
-            
-			<div class="categories-container">
-				<div class="category-card">
-					<img src="../../docs/nominees/series/hamicible.png" alt="Series 1">
-					<span>Hamicible</span>
-				</div>
-				<div class="category-card">
-					<img src="../../docs/nominees/series/series (4).png" alt="Series 2">
-					<span>Invincible S2</span>
-				</div>
-				<div class="category-card">
-					<img src="../../docs/nominees/series/series (1).png" alt="Series 3">
-					<span>grendizer 2023</span>
-				</div>
-				<div class="category-card">
-					<img src="../../docs/nominees/series/series (2).png" alt="Series 4">
-					<span>Stranger Things S4</span>
-				</div>
-				<div class="category-card">
-					<img src="../../docs/nominees/series/series (3).png" alt="Series 5">
-					<span>Tom & Jerry (1940)</span>
-				</div>
-			</div>
-		</main>
+
+	<main class="voting-section">
+		<div id="play-list">
+			<button onclick="surfeCategory(-1)"> < </button>
+			<h2 id="categories-title"></h2>
+			<button onclick="surfeCategory(+1)"> > </button>
+		</div>
+		<p  id="categories-paragraph"></p>
+
+		<div id="categories-container">
+		</div>
+		<script src="categories-collection.js"></script>
+		<script src="categories-generator.js"></script>
+	</main>
+
     <footer>
         <p>&copy; 2041 Hamizza Inc. All rights stolen.</p>
         <ul>
