@@ -1,5 +1,6 @@
 function loadHTML(id, htmlFile){
-	fetch(htmlFile).then(fetch => fetch.text()).then(snippet => {
-		document.getElementById(id).innerHTML=snippet}
+	fetch(htmlFile).then(fetched => fetched.text()).then(
+		snippet => {
+		document.getElementById(id).insertAdjacentHTML("beforeend",snippet)}
 	).catch(error => console.log(error))
 }

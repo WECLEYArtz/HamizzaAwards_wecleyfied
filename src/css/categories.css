@@ -4,14 +4,28 @@ a {
 
 #play-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #play-list button{
-	background-color: #2a2a2a;
-	/* border-radius: 10%; */
-	width: 20%;
-	color: white;
+  align-items: center;
+  border: 1px solid #FFD700;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 100%;
+  padding: 14px 22px;
+  background-color: #2a2a2a;
+  /* border-radius: 10%; */
+  width: 20em;
+  height: 5em;
+  color: #FFD700;
 }
 
 .categories {

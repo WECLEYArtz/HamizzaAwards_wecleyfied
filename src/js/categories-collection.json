@@ -1,0 +1,417 @@
+
+// <div class="category-card">
+//		<img src="../image/path" alt="Series N">
+//		<span> Title </span>
+// </div>
+// data : image , alt , title.
+
+
+var cards_collection = [
+	[
+		title=[
+			"Series with the Most Uploaded Episodes in 2024",
+		],
+		paragraph = "Celebrating the shows that flooded our screens with so many episodes in 2024,we delivered zero episodes in this year, proving that less is more (and we really mean less).You're welcome.",
+		{
+			img: "../../docs/nominees/series/hamicible.png", 
+			alt: "Series 1",
+			title: "Hamicible",
+		},
+		{
+			img: "../../docs/nominees/series/series (4).png",
+			alt: "Series 2",
+			title: "Invincible S2",
+		},
+		{
+			img: "../../docs/nominees/series/series (1).png",
+			alt: "Series 3",
+			title: "grendizer 2023",
+		},
+		{
+			img: "../../docs/nominees/series/series (2).png",
+			alt: "Series 4",
+			title: "Stranger Things S4",
+		},
+		{
+			img: "../../docs/nominees/series/series (3).png",
+			alt: "Series 5",
+			title: "Tom & Jerry (1940)",
+		},
+	],
+	[
+		title=[
+			"Best Editing",
+		],
+		paragraph= "Honoring the editor who didn't even touch the undo button all year.",
+		{
+			img: "../../docs/nominees/editing/editing (1).gif",
+			alt: "Series 3",
+			title: "Wecley Artz (Cameraman)"
+		},
+		{
+			img: "../../docs/nominees/editing/editing (1).png",
+			alt: "Series 2",
+			title: "Filmora",
+		},
+		{
+			img: "../../docs/nominees/editing/editing (2).png",
+			alt: "Series 3",
+			title: "Cap Cut",
+		},
+		{
+			img: "../../docs/nominees/editing/editing (3).png",
+			alt: "Series 4",
+			title: "IPhone bullshit",
+		},
+		{
+			img: "../../docs/nominees/editing/editing (4).png",
+			alt: "Series 5",
+			title: "Whatsapp 💯",
+		},
+	],
+	[
+		title=[
+			"Best Actor",
+			" The One Who Made Us Forget We're Watching a Show",
+		],
+		paragraph= "Shouting out the actor who brought the role to life so well, we forgot we were watching a scripted show.",
+		{
+			img: "../../docs/nominees/actor/actor (1).png" ,
+			alt: "Series 1",
+			title: "1/2 MAD",
+		},
+		{
+			img: "../../docs/nominees/actor/actor (2).png" ,
+			alt: "Series 2",
+			title: "Co/Writer",
+		},
+		{
+			img: "../../docs/nominees/actor/actor (3).png" ,
+			alt: "Series 3",
+			title: "Bottle",
+		},
+		{
+			img: "../../docs/nominees/actor/actor (4).png" ,
+			alt: "Series 3",
+			title: "Kora",
+		},
+		{
+			img: "../../docs/nominees/actor/actor (5).png" ,
+			alt: "Series 3",
+			title: "Cameraman",
+		},
+		{
+			img: "../../docs/nominees/actor/actor (6).png" ,
+			alt: "Series 3",
+			title: "Hamizza",
+		},
+	],
+	[
+		title=[
+			"Best Actress",
+		],
+		paragraph=  "she played the most attractive roles in 2024",
+		{   img: "../../docs/nominees/actress/actress (1).png" ,
+			alt: "Series 1",
+			title: "Jenna Ortega",
+		},
+		{   img: "../../docs/nominees/actress/actress (2).png" ,
+			alt: "Series 2",
+			title: "Jennifer Lopez",
+		},
+		{   img: "../../docs/nominees/actress/actress (3).png" ,
+			alt: "Series 3",
+			title: "Queen Elizabeth II",
+		},
+		{   img: "../../docs/nominees/actress/actress (4).png" ,
+			alt: "Series 4",
+			title: "That Girl",
+		},
+		{   img: "../../docs/nominees/actress/actress (5).png" ,
+			alt: "Series 5",
+			title: "L7ima 🥵🥵",
+		},
+	],
+	[
+		title=[
+			"Best Customer Service",
+			" For When Your Show Literally Serves You"
+		],
+		paragraph= "Shoutout to the series that gave us top-tier customer service with every episode—quick, effective, and absolutely zero wait time. Our customer service is unbeatable because no one's ever had anything to complain about. The pictures bellow are made by our best editor Wicley, he didn't win the prize for nothing!",
+
+		{
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 1",
+			title: "Agent 1",
+		},
+		{
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 2",
+			title: "Agent 2",
+		},
+		{
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 3",
+			title: "Agent 3",
+		},
+		{ 
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 4",
+			title: "Agent 4",
+		},
+		{
+			img: "../../docs/nominees/service/agent.jpeg",
+			alt: "Agent 5",
+			title: "Agent 5",
+		},
+	],
+	[
+        title= [
+            "Series with the Most Uploaded Episodes in 2024"
+        ],
+        paragraph= "Celebrating the shows that flooded our screens with so many episodes in 2024, we delivered zero episodes in this year, proving that less is more (and we really mean less). You're welcome.",
+        {
+            img: "../../docs/nominees/costume/costume (1).png",
+            alt: "Series 1",
+            title: "Mamado"
+        },
+        {
+            img: "../../docs/nominees/costume/costume (2).png",
+            alt: "Series 2",
+            title: "Kora hh"
+        },
+        {
+            img: "../../docs/nominees/costume/costume (3).png",
+            alt: "Series 3",
+            title: "Obtimos Brime"
+        },
+        {
+            img: "../../docs/nominees/costume/costume (6).png",
+            alt: "Series 3",
+            title: "Unkown Man"
+        },
+        {
+            img: "../../docs/nominees/costume/costume (4).png",
+            alt: "Series 4",
+            title: "Hamid"
+        }
+	],
+	[
+        title= [
+            "Best Fandom"
+        ],
+        paragraph= "😂",
+        {
+            img: "../../docs/nominees/fandom/fandom (1).png",
+            alt: "Series 1",
+            title: "Samsung (2013)"
+        },
+        {
+            img: "../../docs/nominees/fandom/fandom (2).png",
+            alt: "Series 2",
+            title: "IPhone (2016)"
+        },
+        {
+            img: "../../docs/nominees/fandom/fandom (3).png",
+            alt: "Series 3",
+            title: "SerenityOS (2024)"
+        },
+        {
+            img: "../../docs/nominees/fandom/fandom (4).png",
+            alt: "Series 4",
+            title: "Facebook (2018)"
+        },
+        {
+            img: "../../docs/nominees/fandom/fandom (5).png",
+            alt: "Series 5",
+            title: "Twitter (2024)"
+        },
+        {
+            img: "../../docs/nominees/fandom/fandom (6).png",
+            alt: "Series 6",
+            title: "Windows (2017)"
+        },
+        {
+            img: "../../docs/nominees/fandom/fandom (7).png",
+            alt: "Series 7",
+            title: "JoyPixels (2014)"
+        }
+	],
+	[
+        title= [
+            "Best Game"
+        ],
+        paragraph= "Vote for the game that you've enjoyed the most in 2024.",
+        {
+            img: "../../docs/nominees/game/1.png",
+            alt: "Series 1",
+            title: "Series 1"
+        },
+        {
+            img: "../../docs/nominees/game/2.png",
+            alt: "Series 2",
+            title: "Series 2"
+        },
+        {
+            img: "../../docs/nominees/game/3.png",
+            alt: "Series 3",
+            title: "Series 3"
+        },
+        {
+            img: "../../docs/nominees/game/4.png",
+            alt: "Series 4",
+            title: "Series 4"
+        },
+        {
+            img: "../../docs/nominees/game/5.png",
+            alt: "Series 5",
+            title: "Series 5"
+        }
+	],
+	[
+        title= [
+            "Best Twearking"
+        ],
+        paragraph= "<img src=\"../../docs/carousel/Out of Ideas 👍.png\" style=\"max-height: 80vh; max-width: 80vw;\">",
+        {
+            img: "../../docs/nominees/sounds/sounds (1).gif",
+            alt: "Series 1",
+            title: "Hamid"
+        },
+        {
+            img: "../../docs/nominees/sounds/sounds (2).gif",
+            alt: "Series 2",
+            title: "Pizza"
+        },
+        {
+            img: "../../docs/nominees/sounds/sounds (3).png",
+            alt: "Series 3",
+            title: "Mamado"
+        },
+        {
+            img: "../../docs/nominees/sounds/sounds (2).gif",
+            alt: "Series 4",
+            title: "شوف الجمال"
+        },
+        {
+            img: "../../docs/nominees/sounds/sounds (1).gif",
+            alt: "Series 5",
+            title: "شوف اللياقة"
+        }
+	],
+	[
+        title= [
+            "Best Storytelling, When Even Plot Holes Become Art"
+        ],
+        paragraph= "For the series that told a story so well, brilliant narrative where every plot hole was 100% intentional, we didn't even care when characters randomly disappeared for 5 episodes. Hell yeah.",
+        {
+            img: "../../docs/nominees/story/story (1).png",
+            alt: "Series 1",
+            title: "Attack on Thighsan"
+        },
+        {
+            img: "../../docs/nominees/story/story (2).png",
+            alt: "Series 2",
+            title: "Train to Busting"
+        },
+        {
+            img: "../../docs/nominees/story/story (3).png",
+            alt: "Series 3",
+            title: "ArCame"
+        },
+        {
+            img: "../../docs/nominees/story/story (1).png",
+            alt: "Series 4",
+            title: "Series 4"
+        },
+        {
+            img: "../../docs/nominees/story/story (4).png",
+            alt: "Series 5",
+            title: "Squirt Game"
+        }
+	],
+	[
+        title= [
+            "Most Caked Up Character: More Than Just a Personality"
+        ],
+        paragraph= "Let's not pretend we didn't all know who this was. Awarding the character with the most ASSet, and, well, maybe their personality too.",
+        {
+            img: "../../docs/nominees/cacked/cacked (1).gif",
+            alt: "Series 2",
+            title: "Blue Suit Chinese Guy Eagle"
+        },
+        {
+            img: "../../docs/nominees/cacked/cacked.png",
+            alt: "Series 3",
+            title: "جشلاط"
+        },
+        {
+            img: "../../docs/nominees/cacked/cacked (2).gif",
+            alt: "Series 3",
+            title: "Beige Pants and Big Ass Man"
+        }
+	],
+	[
+        title= [
+            "Most Mentally Sane Actor, Keeping It Together (Barely)"
+        ],
+        paragraph= "Honoring the actor who stayed completely sane throughout—mainly because they never had to deal with anything in the first place.",
+        {
+            img: "../../docs/nominees/mentally/mentally (1).png",
+            alt: "Series 1",
+            title: "Jeshlat"
+        },
+        {
+            img: "../../docs/nominees/mentally/mentally (2).png",
+            alt: "Series 2",
+            title: "Random dude with down syndrome"
+        },
+        {
+            img: "../../docs/nominees/mentally/mentally (3).png",
+            alt: "Series 3",
+            title: "L7ima's Chair"
+        },
+        {
+            img: "../../docs/nominees/mentally/mentally (4).png",
+            alt: "Series 3",
+            title: "Pizza :D"
+        },
+        {
+            img: "../../docs/nominees/mentally/mentally (5).png",
+            alt: "Series 3",
+            title: "Hamid🖤"
+        }
+	],
+	[
+        title= [
+            "Most Realistic Plot, What's Logic Anyway?"
+        ],
+        paragraph= "The story so real, it mirrors our lives perfectly: no progression at all.",
+        {
+            img: "../../docs/nominees/realistic/realistic (1).png",
+            alt: "Series 2",
+            title: "The Last Of Us: Part Tfoo"
+        },
+        {
+            img: "../../docs/nominees/realistic/realistic (2).png",
+            alt: "Series 3",
+            title: "A Silent Voice"
+        },
+        {
+            img: "../../docs/nominees/realistic/realistic (3).png",
+            alt: "Series 3",
+            title: "The Lion King"
+        },
+        {
+            img: "../../docs/nominees/realistic/realistic (4).png",
+            alt: "Series 3",
+            title: "Star Wars"
+        },
+        {
+            img: "../../docs/nominees/realistic/bomb.png",
+            alt: "Series 1",
+            title: "A Silent Bomb"
+        }
+	]
+]
+

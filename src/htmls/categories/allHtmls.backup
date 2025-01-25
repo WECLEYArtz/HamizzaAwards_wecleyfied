@@ -1,0 +1,251 @@
+<!DOCTYPE html> 
+
+<!-- إلى انتحرت راك عارف السبب -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Series with the Most Uploaded Episodes in 2024</title>
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/categories.css">
+    <link rel="icon" href="../../docs/home.png">
+
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="../../../index.html"><img src="../../docs/home.png" alt="Home"></a>
+            <ul>
+                <li><a href="../pages/news.html">News</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="../../docs/home.png" alt="User Profile Picture">
+        </div>
+    </nav>
+
+	<main class="voting-section">
+		<div id="play-list">
+			<button onclick="surfeCategory(-1)"> < </button>
+			<h2 id="categories-title"></h2>
+			<button onclick="surfeCategory(+1)"> > </button>
+		</div>
+		<p  id="categories-paragraph"></p>
+
+		<div id="categories-container">
+		</div>
+		<script src="../../js/categories-collection.json"></script>
+		<script src="../../js/award-categories-generator.js"></script>
+	</main>
+
+    <footer>
+        <p>&copy; 2041 Hamizza Inc. All rights stolen.</p>
+        <ul>
+            <li><a href="../pages/privacy.html">Privacy Policy</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="#">Social Media</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+            <h2>Best Costume Design</h2>
+            <p>Who had the best costume in Hamizza?</p>
+            
+            <div class="categories-container">
+                <div class="categories">
+                        },
+						{   img: "../../docs/nominees/costume/costume (1).png" ,
+							alt: "Series 1",
+                        	title: "Mamado",
+                        },
+						{   img: "../../docs/nominees/costume/costume (2).png" ,
+							alt: "Series 2",
+                        	title: "Kora hh",
+                        },
+						{   img: "../../docs/nominees/costume/costume (3).png" ,
+							alt: "Series 3",
+                        	title: "Obtimos Brime",
+                        },
+						{   img: "../../docs/nominees/costume/costume (6).png" ,
+							alt: "Series 3",
+                        	title: "Unkown Man",
+                        },
+						{   img: "../../docs/nominees/costume/costume (4).png" ,
+							alt: "Series 4",
+                        	title: "Hamid",
+                        },
+						++++++++++++++++++++++++++++++++++++++++++++++++++
+            <h2>Best Fandom:</h2>
+            <p>😂</p>
+                        <img src="../../docs/nominees/fandom/fandom (1).png" alt="Series 1">
+                        <p>Samsung (2013)</p>
+                        <img src="../../docs/nominees/fandom/fandom (2).png" alt="Series 2">
+                        <p>IPhone (2016)</p>
+                        <img src="../../docs/nominees/fandom/fandom (3).png" alt="Series 3">
+                        <p>SerenityOS (2024)</p>
+                        <img src="../../docs/nominees/fandom/fandom (4).png" alt="Series 4">
+                        <p>Facebook (2018)</p>
+                        <img src="../../docs/nominees/fandom/fandom (5).png" alt="Series 5">
+                        <p>Twitter (2024)</p>
+                        <img src="../../docs/nominees/fandom/fandom (6).png" alt="Series 6">
+                        <p>Windows (2017)</p>
+                        <img src="../../docs/nominees/fandom/fandom (7).png" alt="Series 7">
+                        <p>JoyPixels (2014)</p>
+						++++++++++++++++++++++++++++++++++++++++++++++++++
+        <section class="voting-section">
+            <h2>Best Game</h2>
+            <p>Vote for your the game that you've enjoyed it the most in 2024.</p>
+            
+            <div class="categories-container">
+                <div class="categories">
+                    <div class="category-card">
+                        <img src="../../docs/nominees/game/1.png" alt="Series 1">
+                        <p>Series 1</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/game/2.png" alt="Series 2">
+                        <p>Series 2</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/game/3.png" alt="Series 3">
+                        <p>Series 3</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/game/4.png" alt="Series 4">
+                        <p>Series 4</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/game/5.png" alt="Series 5">
+                        <p>Series 5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+						++++++++++++++++++++++++++++++++++++++++++++++++++
+        <section class="voting-section">
+            <h2>Best Twearking</h2>
+            <p><img src="../../docs/carousel/Out of Ideas 👍.png" style="max-height: 80vh; max-width: 80vw;"></p>
+            
+            <div class="categories-container">
+                <div class="categories">
+                    <div class="category-card">
+                        <img src="../../docs/nominees/sounds/sounds (1).gif" alt="Series 1">
+                        <p>Hamid</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/sounds/sounds (2).gif" alt="Series 2">
+                        <p>Pizza</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/sounds/sounds (3).png" alt="Series 3">
+                        <p>Mamado</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/sounds/sounds (2).gif" alt="Series 4">
+                        <p>شوف الجمال</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/sounds/sounds (1).gif" alt="Series 5">
+                        <p>شوف اللياقة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+						++++++++++++++++++++++++++++++++++++++++++++++++++
+        <section class="voting-section">
+            <h2>Best Storytelling, When Even Plot Holes Become Art.</h2>
+            <p>For the series that told a story so well, brilliance narrative where every plot hole was 100% intentional, we didn't even care when characters randomly disappeared for 5 episodes. Hell yeah.</p>
+            
+            <div class="categories-container">
+                <div class="categories">
+                    <div class="category-card">
+                        <img src="../../docs/nominees/story/story (1).png" alt="Series 1">
+                        <p>Attack on Thighsan</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/story/story (2).png" alt="Series 2">
+                        <p>Train to Busting</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/story/story (3).png" alt="Series 3">
+                        <p>ArCame</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/story/story (1).png" alt="Series 4">
+                        <p>Series 4</p>
+                    </div>
+                    <div class="category-card">
+                        <img src="../../docs/nominees/story/story (4).png" alt="Series 5">
+                        <p>Squirt Game</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+						++++++++++++++++++++++++++++++++++++++++++++++++++
+            <h2>Most Caked Up Character: More Than Just a Personality</h2>
+            <p>Let's not pretend we didn't all know who this was. Awarding the character with the most ASSet, and, well, maybe their personality too.</p>
+                        <img src="../../docs/nominees/cacked/cacked (1).gif" alt="Series 2">
+                        <p>Blue Suit Chinese Guy Eagle</p>
+                    <img src="../../docs/nominees/cacked/cacked.png   " alt="Series 3">
+                        <p>جشلاط</p>
+                        <img src="../../docs/nominees/cacked/cacked (2).gif" alt="Series 3">
+                        <p>Beige Pants and Big Ass Man</p>
+						++++++++++++++++++++++++++++++++++++++++++++++++++
+            <h2>Most Mentally Sane Actor, Keeping It Together (Barely)</h2>
+            <p>Honoring the actor who stayed completely sane throughout—mainly because they never had to deal with anything in the first place.</p>
+                        <img src="../../docs/nominees/mentally/mentally (1).png" alt="Series 1">
+                        <p>Jeshlat</p>
+                        <img src="../../docs/nominees/mentally/mentally (2).png" alt="Series 2">
+                        <p>Random dude with down syndrom</p>
+                        <img src="../../docs/nominees/mentally/mentally (3).png" alt="Series 3">
+                        <p>L7ima's Chair</p>
+                        <img src="../../docs/nominees/mentally/mentally (4).png" alt="Series 3">
+                        <p>Pizza :D</p>
+                        <img src="../../docs/nominees/mentally/mentally (5).png" alt="Series 3">
+                        <p>Hamid🖤</p>
+						++++++++++++++++++++++++++++++++++++++++++++++++++
+            <h2>Most Realistic Plot, What's Logic Anyway?</h2>
+            <p>The story so real, it mirrors our lives perfectly: no progression at all.</p>
+                        <img src="../../docs/nominees/realistic/realistic (1).png" alt="Series 2">
+                        <p>The Last Of Us: Part Tfoo</p>
+
+                        <img src="../../docs/nominees/realistic/realistic (2).png" alt="Series 3">
+                        <p>A Silent Voice</p>
+
+                        <img src="../../docs/nominees/realistic/realistic (3).png" alt="Series 3">
+                        <p>The Lion King</p>
+
+                        <img src="../../docs/nominees/realistic/realistic (4).png" alt="Series 3">
+                        <p>Star Wars</p>
+
+                        <img src="../../docs/nominees/realistic/bomb.png" alt="Series 1">
+                        <p>A Silent Bomb</p>
+						++++++++++++++++++++++++++++++++++++++++++++++++++
+            <h2>Most Sold Manga, Breaking Records!</h2>
+            <p>Celebrating the manga that achieved a 100% sell-through rate of all PRINTED copies.</p>
+            <p style="padding: 0%; color: rgb(54, 51, 51);">0 copy + 0 sale?? = 100% sold!!!! <br>make sense?
+            </p>
+                        <img src="../../docs/home.png" alt="Series 1">
+                        <p>Hamizza Manga (0 chapter, 0 copy)</p>
+                        <em style="padding-top: 5px; color:grey; font-size: smaller;">still on our to-do list</em>
+
+
+                        <img src="../../docs/nominees/manga/manga (1).png" alt="Series 2">
+                        <p>Halal Piece (+1100 chapter, +500m copy)</p>
+
+
+                        <img src="../../docs/nominees/manga/manga (2).png" alt="Series 3">
+                        <p>Berserk (+341 chapter, +60m copy)</p>
+
+
+                        <img src="../../docs/nominees/manga/manga (3).png" alt="Series 3">
+                        <p>Dept Note (108 chapter, +30m copy)</p>
+
+
+                        <img src="../../docs/nominees/manga/manga (4).png" alt="Series 3">
+                        <p>Drama Queen (+5 chapters hh)</p>
+
+						++++++++++++++++++++++++++++++++++++++++++++++++++

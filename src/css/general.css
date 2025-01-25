@@ -17,6 +17,7 @@ p {
 }
 
 h1 , h2{
+  padding-inline: 1em;
   color: #ffd700;
   margin: 0;
   text-align: center;
