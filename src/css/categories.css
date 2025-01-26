@@ -5,27 +5,28 @@ a {
 #play-list {
     display: flex;
     justify-content: space-between;
+	padding-inline: 1em;
 }
 
 #play-list button{
-  align-items: center;
-  border: 1px solid #FFD700;
-  border-radius: 16px;
-  box-sizing: border-box;
-  color: #000000;
-  cursor: pointer;
-  display: flex;
-  font-family: Inter, sans-serif;
-  font-size: 18px;
-  justify-content: center;
-  line-height: 28px;
-  max-width: 100%;
-  padding: 14px 22px;
-  background-color: #2a2a2a;
-  /* border-radius: 10%; */
   width: 20em;
   height: 5em;
+
+  max-width: 100%;
+  padding: 14px 22px;
+
+  background-color: #2a2a2a;
   color: #FFD700;
+  border: 3px solid #FFD700;
+  border-radius: 16px;
+  box-sizing: border-box;
+
+
+  cursor: pointer;
+  line-height: 28px;
+
+  box-shadow: 0px -6px 40px 5px #00000085;
+  border-bottom: 5px solid rgb(75 70 41);
 }
 
 .categories {
@@ -48,12 +49,10 @@ a {
   display: block;
   align-items: center;
 }
-
 .category-card:hover {
   background-color: #4a4a6a;
   border-color: #4a4a6a;
 }
-
 .category-card h3 {
   margin: 0;
   position: absolute;
@@ -63,18 +62,6 @@ a {
   font-size: 1em;
   text-align: center;
 }
-/* حقدت يا زبي */
-.category-card img {
-  width: 100%;
-  object-fit: contain;
-}
-
-@media (max-width: 768px) {
-  .category-card img {
-    height: auto;
-  }
-}
-
 .category-card span {
 	color: #d0d0d0;
     position: absolute;
@@ -83,12 +70,32 @@ a {
     width: 100%;
     text-align: center;
 }
-
-
-/*Wecley lah yn3l xerek*/
+.category-card img {
+  width: 100%;
+  object-fit: contain;
+}
 .category-card video {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+
+	#play-list{
+        display: flex;
+        width: -webkit-fill-available;
+        position: fixed;
+        top: 80%;
+		z-index: 998;
+	}
+
+	#play-list button{
+		width: 30%;
+		background-color: #2a2a2aa6;
+	}
+  .category-card img {
+    height: auto;
+  }
 }
